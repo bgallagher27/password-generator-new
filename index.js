@@ -4,10 +4,11 @@ const inquirer = require("inquirer");
 class PasswordCharacters {
     constructor(characters) {
         this.characters = characters;
-
-    console.log(JSON.stringify(...characters));
     };
 
+    get chars() {
+        return JSON.stringify(...(this.characters));
+    };
 };
 
 class Password { 
@@ -43,5 +44,7 @@ inquirer.prompt(questions)
 //Formatting the inquirer responses
 .then(function(answers) {
     let generatedInputs = new PasswordCharacters(answers.parameters);
+    console.log(generatedInputs.chars);
+    //let generatedPassword = new Password(answers.characters, generatedInputs.chars);
     //console.log(generatedPassword);
 });
