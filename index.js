@@ -7,7 +7,7 @@ class PasswordCharacters {
     };
 
     get chars() {
-        return JSON.stringify(...(this.characters));
+        return this.characters.join('');
     };
 };
 
