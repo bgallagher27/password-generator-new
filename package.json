@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bgallagher27/password-generator-new/issues"
   },
-  "homepage": "https://github.com/bgallagher27/password-generator-new#readme"
+  "homepage": "https://github.com/bgallagher27/password-generator-new#readme",
+  "dependencies": {
+    "inquirer": "^7.0.6"
+  }
 }
